@@ -6,7 +6,10 @@
       path = require("path");
       chalkboard = require("chalkboard");
       options = this.options({
-        separator: grunt.util.linefeed
+        separator: grunt.util.linefeed,
+        "private": false,
+        header: false,
+        format: "markdown"
       });
       return this.files.forEach(function(f) {
         var destPath, src;
@@ -23,7 +26,7 @@
           var code;
 
           code = grunt.file.read(filepath);
-          return chalkboard.compile(code, {}, filepath);
+          return chalkboard.compile(code, options, filepath);
         }).join(grunt.util.normalizelf(options.separator));
         grunt.file.write(destPath, src);
         return grunt.log.writeln("File \"" + destPath + "\" created.");
