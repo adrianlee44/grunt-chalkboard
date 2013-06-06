@@ -42,6 +42,6 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "chalkboard": "~0.2.2"
+    "chalkboard": "~0.2.4"
   }
 }
