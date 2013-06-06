@@ -15,6 +15,9 @@ module.exports = (grunt) ->
 
     options = @options
       separator: grunt.util.linefeed
+      private:   false
+      header:    false
+      format:    "markdown"
 
     # Iterate over all specified file groups.
     @files.forEach (f) ->
@@ -27,7 +30,7 @@ module.exports = (grunt) ->
         return exist
       ).map((filepath) ->
         code = grunt.file.read filepath
-        chalkboard.compile code, {}, filepath
+        chalkboard.compile code, options, filepath
       ).join(grunt.util.normalizelf(options.separator))
 
       # Write the destination file.
