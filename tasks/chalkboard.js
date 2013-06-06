@@ -28,8 +28,10 @@
           code = grunt.file.read(filepath);
           return chalkboard.compile(code, options, filepath);
         }).join(grunt.util.normalizelf(options.separator));
-        grunt.file.write(destPath, src);
-        return grunt.log.writeln("File \"" + destPath + "\" created.");
+        if (src) {
+          grunt.file.write(destPath, src);
+          return grunt.log.writeln("File \"" + destPath + "\" created.");
+        }
       });
     });
   };
