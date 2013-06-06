@@ -1,4 +1,4 @@
-# grunt-chalkboard
+# grunt-chalkboard [![Build Status](https://travis-ci.org/adrianlee44/grunt-chalkboard.png?branch=master)](https://travis-ci.org/adrianlee44/grunt-chalkboard)
 
 > Grunt task for Chalkboard
 
