@@ -34,7 +34,8 @@ module.exports = (grunt) ->
       ).join(grunt.util.normalizelf(options.separator))
 
       # Write the destination file.
-      grunt.file.write destPath, src
+      if src
+        grunt.file.write destPath, src
 
-      # Print a success message.
-      grunt.log.writeln "File \"" + destPath + "\" created."
+        # Print a success message.
+        grunt.log.writeln "File \"" + destPath + "\" created."
