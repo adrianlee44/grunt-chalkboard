@@ -1,7 +1,7 @@
 {
   "name": "grunt-chalkboard",
   "description": "Grunt task for Chalkboard",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/adrianlee44/grunt-chalkboard",
   "author": {
     "name": "Adrian Lee",
@@ -40,9 +40,15 @@
     "grunt": "~0.4.1"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "chalkboard",
+    "grunt",
+    "javascript",
+    "coffeescript",
+    "jsdoc",
+    "documentation"
   ],
   "dependencies": {
-    "chalkboard": "0.4.0"
+    "chalkboard": "0.4.2"
   }
 }
