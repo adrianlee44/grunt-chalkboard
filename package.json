@@ -1,7 +1,7 @@
 {
   "name": "grunt-chalkboard",
   "description": "Grunt task for Chalkboard",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "homepage": "https://github.com/adrianlee44/grunt-chalkboard",
   "author": {
     "name": "Adrian Lee",
